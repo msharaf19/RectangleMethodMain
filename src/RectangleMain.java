@@ -16,17 +16,19 @@ public class RectangleMain {
 		double width = in.nextDouble();
 		in.nextLine();
 		
-		System.out.println("Area: ");
-		System.out.println(length*width);
+		System.out.printf("%-16s", "Area: ");
+		System.out.printf("%3.1f",length*width);
+		System.out.print("\n");
 		
-		System.out.println("Perimeter: ");
-		System.out.println((2*length)+(2*width));
+		System.out.printf("%-16s", "Perimeter: ");
+		System.out.printf("%3.1f", (2*length)+(2*width));
+		System.out.print("\n");
 		
 		double resultDiagnol = (Math.pow(length, 2))+(Math.pow(width, 2));
 		double finalDiagnol = Math.sqrt(resultDiagnol);
 		
-		System.out.println("Diagnol length: ");
-		System.out.printf("%.1f", finalDiagnol);
+		System.out.printf("%-10s", "Diagnol length: ");
+		System.out.printf("%3.1f", finalDiagnol);
 		
 		
 		
